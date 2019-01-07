@@ -1,0 +1,46 @@
+
+<script type="text/x-red" data-template-name="feedparse3">
+    <div class="form-row">
+        <label for="node-input-url"><i class="fa fa-globe"></i> <span data-i18n="feedparse3.label.feedurl"></span></label>
+        <input type="text" id="node-input-url">
+    </div>
+    <div class="form-row">
+        <label for="node-input-expr"><i class="fa fa-code"></i> <span data-i18n="feedparse3.label.feedexpr"></span></label>
+        <input type="text" id="node-input-expr">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node-red:common.label.name"></span></label>
+        <input type="text" id="node-input-name" data-i18n="[placeholder]node-red:common.label.name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="feedparse3">
+    <p>Monitors an RSS/atom feed for new entries.</p>
+    <p>The <code>msg.topic</code> contains the original article link. The <code>msg.payload</code>
+    contains the description, and <code>msg.article</code> contains the complete article object,
+    which has properties such as <code>.title</code>, <code>.summary</code>, <code>.date</code> and so on.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('feedparse3',{
+        category: 'advanced-input',
+        color:"#C0DEED",
+        defaults: {
+            name: {value:""},
+            url: {value:""},
+            expr: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "feed.png",
+        paletteLabel: function() {
+            return this._("feedparse3.feedparse3");
+        },
+        label: function() {
+            return this.name||this.expr||this._("feedparse3.feedparse3");
+        },
+        labelStyle: function() {
+            return this.name?"node_label_italic":"";
+        }
+    });
+</script>

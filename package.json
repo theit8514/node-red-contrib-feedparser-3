@@ -1,0 +1,26 @@
+{
+  "name": "node-red-contrib-feedparser-3",
+  "version": "0.1.0",
+  "description": "A Node-RED node to get RSS Atom feeds. (injectable)",
+  "dependencies": {
+    "feedparser": "^2.2.9",
+    "request": "^2.83.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theit8514/node-red-contrib-feedparser-3"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "atom",
+    "rss",
+    "feed",
+    "parse"
+  ],
+  "node-red": {
+    "nodes": {
+      "feedparse3": "feedparse.js"
+    }
+  }
+}

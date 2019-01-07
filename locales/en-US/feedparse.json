@@ -1,0 +1,14 @@
+{
+    "feedparse3": {
+        "feedparse3": "feedparser 3",
+        "label": {
+            "feedurl": "Feed url",
+            "feedexpr": "Feed content expression"
+        },
+        "errors": {
+            "badstatuscode": "error - Bad status code",
+            "invalidurl": "Invalid url",
+            "invalidexp": "Invalid JSONata expression: __message__"
+        }
+    }
+}
