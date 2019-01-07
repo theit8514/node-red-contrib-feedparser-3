@@ -17,5 +17,6 @@ Run the following command in your Node-RED user directory - typically `~/.node-r
 Credits
 -------
 
-RayPS for node-red-contrib-feedparser-2
+RayPS for [node-red-contrib-feedparser-2](https://github.com/RayPS/node-red-contrib-feedparser-2)
+
 Node-Red team for original feedparser
